@@ -81,13 +81,10 @@ function Calculator() {
     setAnswer(String(ans))
   }
   
-
-
-
   return (
     <div className="container">
       <h1>React Calculator</h1>
-      <input name="display" value={question} readOnly />
+      <input type="text" name="display" value={question} readOnly />
       {answer.length > 0 && <div>{answer}</div>}
       <div className="calc-buttons">
         <div>
